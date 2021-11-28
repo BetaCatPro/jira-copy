@@ -1,46 +1,75 @@
-# Getting Started with Create React App
+# Jira
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+慕课网课程配套项目
 
 ## Available Scripts
 
-In the project directory, you can run:
+启动项目
 
-### `yarn start`
+```shell
+npm start
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+启动 json-server
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```shell
+npm run json-server
+```
 
-### `yarn test`
+## Git Commit
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+注意提交规范
 
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## 项目配置
+
+### json-server middware
+1. 编写middleware.js文件
+2. 注入到json-server中：
+   更改package.json:
+```shell
+"json-server": "json-server __json_server_mock__/db.json --watch --port 3001 --middlewares ./__json_server_mock__/middleware.js"
+```
+
+
+
+### 开发工具包
+
+安装：`npx imooc-jira-tool` [npm](https://preview.npmjs.com/package/jira-dev-tool)
+
+了解`service worker`
+
+if browser's console tip a error,execute the below directive:
+
+npx msw init public
+
+
+
+
+
+## 学习
+
+
+
+- useContent全局状态管理的使用。
+
+- 登陆状态保持。
+
+- TS utillity types、Exculde、Patia、和omit的实现。
+- keyof操作符
+
+
+
+库:
+
+- CSS IN JS：emotion
+
+- 组件库：ant design
+
+
+
