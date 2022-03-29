@@ -54,7 +54,7 @@ export const useHttp = () => {
 };
 
 // 类型别名、Utility Type 讲解
-// 联合类型
+// 联合类型 
 let myFavoriteNumber: string | number;
 myFavoriteNumber = 'seven';
 myFavoriteNumber = 7;
