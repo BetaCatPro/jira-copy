@@ -1,23 +1,8 @@
 import { Form, Input } from 'antd';
 import { useAuth } from 'context/auth-context';
-import { LongButton } from "unauthenticated-app/index";
+import { LongButton } from './index';
 import { useAsync } from 'utils/use-async';
 
-
-// interface Base {
-//   id: number
-// }
-//
-// interface Advance extends Base {
-//   name: string
-// }
-//
-// const test = (p: Base) => {
-// }
-//
-// // 鸭子类型(duck typing)：面向接口编程 而不是 面向对象编程
-// const a = {id: 1, name: 'jack'}
-// test(a)
 
 export const LoginScreen = ({onError}: {onError: (error: Error) => void}) => {
     const { login } = useAuth();
@@ -27,7 +12,7 @@ export const LoginScreen = ({onError}: {onError: (error: Error) => void}) => {
     const handleSubmit =async (values: { username: string; password: string }) => {
         try {
             await run(login(values));
-        } catch (error) {            
+        } catch (error) {
             onError(error)
         }
     };
