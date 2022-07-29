@@ -7,12 +7,14 @@ import right from 'assets/right.svg';
 import React, { useState } from 'react';
 import { LoginScreen } from 'unauthenticated-app/login';
 import { RegisterScreen } from 'unauthenticated-app/register';
-import { useDocumentTitle } from 'utils/index';
+import { useDocumentTitle } from '../utils'
+
 
 export const UnauthenticatedApp = () => {
     const [isRegister, setIsRegister] = useState(false);
     const [error, setError] = useState<Error | null>(null);
 
+    // 使用react-helmet组件也可
     useDocumentTitle('登录或注册以继续');
     return (
         <Container>
