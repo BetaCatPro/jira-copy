@@ -13,6 +13,8 @@ const useRouteType = () => {
 
 export const ProjectScreen = () => {
     const routeType = useRouteType();
+    // @ts-ignore
+    // @ts-ignore
     return (
         <Container>
             <Aside>
@@ -31,6 +33,7 @@ export const ProjectScreen = () => {
                     <Route path={"kanban"} element={<KanbanScreen />} />
                     {/*projects/:projectId/epic*/}
                     <Route path={"epic"} element={<EpicScreen />} />
+                    {/*@ts-ignore*/}
                     <Route index element={<KanbanScreen />} />
                 </Routes>
             </Main>

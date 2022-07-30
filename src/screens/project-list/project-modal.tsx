@@ -74,7 +74,7 @@ export const ProjectModal = () => {
                             </Form.Item>
 
                             <Form.Item label={"负责人"} name={"personId"}>
-                                <UserSelect defaultOptionName={"负责人"} />
+                                {/*<UserSelect defaultOptionName={"负责人"} />*/}
                             </Form.Item>
 
                             <Form.Item style={{ textAlign: "right" }}>
