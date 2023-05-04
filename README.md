@@ -1,39 +1,5 @@
-# Jira
+# 2021 必修：React + React Hook + TS 最佳实践仿 Jira 企业级项目
 
-## Available Scripts
+Hi，同学们好，感谢大家的信任购买这个课程。查看课程对应代码请 checkout 到对应的 commit
 
-启动项目
-
-```shell
-npm start
-```
-
-启动 json-server
-
-```shell
-npm run json-server
-```
-
-## 项目配置
-
-### json-server middware
-1. 编写middleware.js文件
-2. 注入到json-server中：
-   更改package.json:
-```shell
-"json-server": "json-server __json_server_mock__/db.json --watch --port 3001 --middlewares ./__json_server_mock__/middleware.js"
-```
-
-
-
-### 开发工具包
-
-安装：`npx imooc-jira-tool` [npm](https://preview.npmjs.com/package/jira-dev-tool)
-
-if browser's console tip a error,execute the below directive:
-
-npx msw init public
-
-
-
-
+这里是配套课件的链接：[点击我查看配套课件](https://www.notion.so/React-491ad0643476437cafde50bee4dde6ed)

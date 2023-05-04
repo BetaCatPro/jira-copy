@@ -9,7 +9,7 @@ import {
 } from "utils/use-optimistic-options";
 import { Project } from "types/project";
 import { SortProps } from "utils/kanban";
-import { useDebounce } from './index';
+import { useDebounce } from "utils/index";
 
 export const useTasks = (param?: Partial<Task>) => {
   const client = useHttp();
